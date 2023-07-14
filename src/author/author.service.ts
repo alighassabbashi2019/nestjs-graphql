@@ -10,8 +10,6 @@ export class AuthorService {
   ) {}
 
   async findAllAuthors(): Promise<Author[]> {
-    console.log(await this._authorRepo.find());
-
     return this._authorRepo.find();
   }
 
